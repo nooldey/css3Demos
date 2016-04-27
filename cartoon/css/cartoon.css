@@ -1,0 +1,208 @@
+@import url('../../assets/css/reset.css');
+body{
+	padding:0;
+	margin:0;
+}
+.container{
+	width:calc(80% + 10px);
+	min-height:600px;
+	height:100%;
+	background:#3C98D0;
+	margin:20px auto 0;
+	position:relative;
+	overflow:hidden;
+}
+/* cloud */
+.cloud{
+	display:inline-block;
+	width:80px;
+	height:65px;
+	background-color:#FEFEFE;
+	border-radius: 50% 50% 0 0;
+	position:absolute;
+	top:30px;
+	left:10%;
+	transition:all 0.8s ease;
+animation:floatcloud 0.5s ease-in-out infinite;
+}
+.cloud:before{
+	content:"";
+	display:inline-block;
+	width:40px;
+	height:30px;
+	background-color:#FEFEFE;
+	border-radius: 20px 0 0 20px;
+	position: absolute;
+	left:-15px;
+	bottom:0;
+}
+.cloud:after{
+	content:"";
+	display:inline-block;
+	width:60px;
+	height:38px;
+	background-color:#FEFEFE;
+	border-radius: 0 30px 30px 0;
+	position: absolute;
+	right:-20px;
+	bottom:0;
+}
+/*moon*/
+.moon{
+	display:inline-block;
+	width:55px;
+	height:55px;
+	background: #FBFBFB;
+	border-radius: 50%;
+	border:2px solid #FFFDED;
+	box-shadow: 0 0 25px 10px #FFFAD2;
+	position:absolute;
+	right:85px;
+	top:50px;
+}
+/*mountain*/
+.mountain .moun1{
+	width: 300px;
+	height: 300px;
+	background: #2A5B79;
+	transform:rotate(-38deg) skew(10deg);
+	position:absolute;
+	left: 10px;
+	top:250px;
+}
+.mountain .moun2{
+	width: 200px;
+	height:200px;
+	transform:rotate(55deg) skew(30deg);
+	background:#2A5B79;
+	position:absolute;
+	right:275px;
+	top:260px;
+}
+.mountain .moun3{
+	width: 150px;
+	height: 150px;
+	transform:rotate(50deg) skew(15deg);
+	background:#408EBD;
+	position:absolute;
+	right:200px;
+	top:250px;
+}
+.mountain .moun4{
+	width: 220px;
+	height:220px;
+	transform:rotate(-30deg) skew(20deg);
+	background:#2A5B79;
+	position:absolute;
+	right:20px;
+	top:270px;
+}
+/*flag*/
+.flag-pole{
+	width:8px;
+	height:280px;
+	background:#ececec;
+	position:absolute;
+	left:220px;
+	top:130px;
+}
+.flag-pole.pole2{
+	left:528px;
+}
+.flag-pole:before{
+	content:"";
+	display:inline-block;
+	width:12px;
+	height:12px;
+	background:#ececec;
+	border-radius:50%;
+	position: absolute;
+	left:-2px;
+	top:-12px;
+}
+.flag-right{
+	width:300px;
+	height:180px;
+	background-image: -webkit-gradient(linear, 100% 0, 0 0, color-stop(0.05, #013838), color-stop(0.5, #0A6D6D), color-stop(0.95, #013838));
+	background-image: -webkit-linear-gradient(to right, #013838 5%, #0A6D6D 50%, #013838 95%);
+	background-image: -moz-linear-gradient(to right, #013838 5%, #0A6D6D 50%, #013838 95%);
+	background-image: -o-linear-gradient(to right, #013838 5%, #0A6D6D 50%, #013838 95%);
+	background-image: linear-gradient(to right, #013838 5%, #0A6D6D 50%, #013838 95%);
+	border:3px solid #876543;
+	position:absolute;
+	left:226px;
+	top:138px;
+}
+/*bench*/
+.bench{
+	width:120px;
+	height:28px;
+	background:#9c7854;
+	position:absolute;
+	top:350px;
+	left:40px;
+	transform:skew(-30deg);
+}
+.bench:before{
+	content:"";
+	display:inline-block;
+	width:120px;
+	height:10px;
+	background:#846546;
+	position:absolute;
+	bottom:-10px;
+	left:3px;
+	transform:skew(30deg);
+	border-bottom:1px solid #73573B;
+	border-bottom-right-radius:2px;
+}
+.bench:after{
+	content:"";
+	display:inline-block;
+	width: 7px;
+	height:28px;
+	background:#846546;
+	position:absolute;
+	right: -6px;
+	top: 5px;
+	transform: skew(0,60deg);
+	border-right:1px solid #73573B;
+	border-bottom-right-radius:2px;
+}
+.bench-leg{
+	width: 8px;
+    height: 20px;
+    background-color: #69523A;
+    position: absolute;
+    left: 55px;
+    top: 387px;
+}
+.bench-leg:after{
+	    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #846546;
+    position: absolute;
+    right: -20px;
+    top: -16px;
+    transform: skew(0,-60deg);
+    border-bottom-left-radius:2px;
+
+}
+.right-leg{
+	left:120px;
+}
+/*road*/
+.road{
+	height:235px;
+	background-color:#009696;
+	position:relative;
+	top: 365px;
+}
+
+/*通用标签*/
+.scale-cloud{
+	transform:scale(0.65);
+}
+/*动效*/
